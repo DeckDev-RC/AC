@@ -112,3 +112,15 @@ npm run dev:backend    # http://localhost:3001
 | secondary   | `#363636` | Texto secundário       |
 | muted       | `#a6a6a6` | Texto terciário        |
 | border      | `#e2e2e2` | Bordas light           |
+
+## Status e demonstração
+
+- **Status:** MVP demonstrável, com frontend React/Vite e backend Express/TypeScript.
+- **Demonstração:** [atrio.api.br](https://atrio.api.br/)
+- **Escopo:** o repositório usa dados de demonstração; não contém dados operacionais de clientes.
+
+## Segurança e operação
+
+- Segredos devem permanecer em variáveis de ambiente locais, nunca no Git.
+- O projeto mantém Secret Scanning, Push Protection, Dependabot e CodeQL habilitados.
+- O workflow de CI existente ainda possui uma falha no job de backend que precisa ser corrigida antes de uma nova release.
