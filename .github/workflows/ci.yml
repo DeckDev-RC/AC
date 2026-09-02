@@ -10,6 +10,16 @@ jobs:
   backend:
     name: Backend — Lint, Build & Test
     runs-on: ubuntu-latest
+    # Test-only placeholders: no external service is contacted by unit tests.
+    env:
+      SUPABASE_URL: https://ci.example.invalid
+      SUPABASE_SERVICE_ROLE_KEY: ci-placeholder-service-role-key
+      GEMINI_API_KEY: ci-placeholder-gemini-key
+      AUTH_SECURITY_SECRET: ci-placeholder-auth-security-secret-32-chars
+      SMTP_USER: ci@example.invalid
+      SMTP_PASS: ci-placeholder-password
+      SMTP_FROM: CI <ci@example.invalid>
+      ACCESS_REQUEST_NOTIFY_EMAIL: ci@example.invalid
 
     steps:
       - uses: actions/checkout@v4
