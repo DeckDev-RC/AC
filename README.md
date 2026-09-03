@@ -123,4 +123,7 @@ npm run dev:backend    # http://localhost:3001
 
 - Segredos devem permanecer em variáveis de ambiente locais, nunca no Git.
 - O projeto mantém Secret Scanning, Push Protection, Dependabot e CodeQL habilitados.
-- O workflow de CI existente ainda possui uma falha no job de backend que precisa ser corrigida antes de uma nova release.
+- O workflow de CI valida backend e frontend; a release `v1.0.0` foi publicada após os jobs concluírem com sucesso.
+## Licença
+
+Este repositório é disponibilizado para demonstração técnica. Nenhuma licença de reutilização é concedida; solicite autorização ao proprietário antes de copiar, redistribuir ou operar o código.
